@@ -4,15 +4,11 @@ import './App.css';
 import React, {useState} from 'react'
 import Navbar from './components/Navbar';
 import News from './components/News';
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar'
 
 const App=()=>{
-  const pageSize=15;
+  const pageSize=5;
   const apiKey=process.env.REACT_APP_NEWS_API;
   const [progress, setProgress] = useState(0);
     return (
